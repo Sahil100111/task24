@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>task  24</title>
+<style>
+  #myParagraph {
+    display: block;
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<p id="myParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium tempore nobis vero esse blanditiis voluptas rem beatae velit aliquid modi, nulla laborum. Similique repellat architecto odio fugit voluptas accusantium.</p>
+<button class="button" id="hideButton">Hide</button>
+<button class="button" id="showButton">Show</button>
+
+<script>
+  var myParagraph = document.getElementById('myParagraph');
+  var hideButton = document.getElementById('hideButton');
+  var showButton = document.getElementById('showButton');
+
+  hideButton.addEventListener('click', function() {
+    myParagraph.style.display = 'none';
+  });
+
+
+  showButton.addEventListener('click', function() {
+    myParagraph.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
